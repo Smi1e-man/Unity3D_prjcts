@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{F7C6FDD2-CA47-F660-C494-FF2DBC65BEDC}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Generator_blocks.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Generator_blocks.cs" Line="60" Column="65" />
+      <File FileName="Assets/Scripts/Mover.cs" Line="21" Column="139" />
+      <File FileName="Assets/Scripts/IBlocks.cs" Line="5" Column="25" />
+      <File FileName="Assets/Scripts/Mr_Grey_Block.cs" Line="31" Column="31" />
+      <File FileName="Assets/Scripts/Mr_Purple_Block.cs" Line="13" Column="5" />
+      <File FileName="Assets/Scripts/Mr_Bomb_Block.cs" Line="5" Column="52" />
+      <File FileName="Assets/Scripts/ClickMous.cs" Line="9" Column="52" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="7" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
