@@ -5,4 +5,5 @@ using UnityEngine;
 public static class GameManager
 {
     public static int G_count_text;
+    public static int G_main_choice;
 }

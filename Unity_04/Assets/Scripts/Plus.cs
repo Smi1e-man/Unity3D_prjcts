@@ -7,7 +7,7 @@ public class Plus : MonoBehaviour
 {
     public GameObject Panel;
 
-    public void ActivePanel()
+	public void ActivePanel()
     {
         Panel.SetActive(true);
     }
