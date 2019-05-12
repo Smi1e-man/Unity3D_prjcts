@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{3315A15E-9909-83E9-ADCE-22F160B91F9F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Mover.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Mover.cs" Line="38" Column="64" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="36" Column="1" />
+      <File FileName="Assets/Scripts/StarSphere.cs" Line="8" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
