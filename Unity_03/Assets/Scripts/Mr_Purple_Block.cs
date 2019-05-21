@@ -27,6 +27,9 @@ public class Mr_Purple_Block : MonoBehaviour, IBlocks
     }
     public void Crush()
     {
+        GameManager.G_score--;
+        //if (GameManager.G_score < 0)
+            //GameManager.G_score = 0;
         Destroy(gameObject);
     }
 }

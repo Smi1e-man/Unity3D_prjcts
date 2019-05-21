@@ -10,6 +10,8 @@ public class Generator_blocks : MonoBehaviour
     public Material Purple_mtrl;
     public Material Bomb_mtrl;
 
+    float distanceDelta = 0f;
+
     GameObject[] blocks;
 
     GameObject LastBlock;
@@ -31,30 +33,43 @@ public class Generator_blocks : MonoBehaviour
     void Update()
     {
         blocks = GameObject.FindGameObjectsWithTag("Block");
-        if (blocks.Length < 10)
+        if (blocks.Length < 30)
             LastBlock = CreateBlock(LastBlock);
+        distanceDelta = GameManager.G_score * 0.1f;
     }
 
-    GameObject      CreateBlock(GameObject LastBlock)
+    GameObject  CreateBlock(GameObject LastBlock)
     {
+        Debug.Log(distanceDelta);
         newPos = LastBlock.transform.position;
-        newPos.y += LastBlock.transform.localScale.y * (2 + Random.Range(0.5f, 1.2f));
-        GameObject newBlock = Instantiate(prefab, newPos, Quaternion.identity);
-        delegators[Random.Range(Random.Range(0, 2), 3)](newBlock);
+        newPos.z += LastBlock.transform.localScale.z * (Random.Range(1f + distanceDelta, 2f + distanceDelta));
+        GameObject newBlock = Instantiate(prefab, newPos, LastBlock.transform.rotation);
+        delegators[Random_block()](newBlock);
         return newBlock;
     }
 
-    void Grey_block(GameObject block)
+    int         Random_block()
+    {
+        int random = Random.Range(0, 100);
+        if (random < 10)
+            return(2);
+        else if (random < 50)
+            return(1);
+        else
+            return(0);
+    }
+
+    void        Grey_block(GameObject block)
     {
         block.AddComponent<Mr_Grey_Block>();
         block.GetComponent<MeshRenderer>().material = Grey_mtrl;
     }
-    void Purple_block(GameObject block)
+    void        Purple_block(GameObject block)
     {
         block.AddComponent<Mr_Purple_Block>();
         block.GetComponent<MeshRenderer>().material = Purple_mtrl;
     }
-    void Bomb_block(GameObject block)
+    void        Bomb_block(GameObject block)
     {
         block.AddComponent<Mr_Bomb_Block>();
         block.GetComponent<MeshRenderer>().material = Bomb_mtrl;
