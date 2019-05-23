@@ -5,6 +5,7 @@ using UnityEngine;
 public class Generator_blocks : MonoBehaviour
 {
     public GameObject prefab;
+    public GameObject bomb;
 
     public Material Grey_mtrl;
     public Material Purple_mtrl;
@@ -13,6 +14,7 @@ public class Generator_blocks : MonoBehaviour
     float distanceDelta = 0f;
 
     GameObject[] blocks;
+    GameObject newBlock;
 
     GameObject LastBlock;
 
@@ -40,11 +42,22 @@ public class Generator_blocks : MonoBehaviour
 
     GameObject  CreateBlock(GameObject LastBlock)
     {
-        Debug.Log(distanceDelta);
+        //Debug.Log(distanceDelta);
         newPos = LastBlock.transform.position;
         newPos.z += LastBlock.transform.localScale.z * (Random.Range(1f + distanceDelta, 2f + distanceDelta));
-        GameObject newBlock = Instantiate(prefab, newPos, LastBlock.transform.rotation);
-        delegators[Random_block()](newBlock);
+
+        int nb_block = Random_block();
+        if (nb_block == 2)
+        {
+			newPos.y = 3.3f;         
+            newBlock = Instantiate(bomb, newPos, LastBlock.transform.rotation);
+        }
+        else
+        {
+            newPos.y = 3.86f;         
+			newBlock = Instantiate(prefab, newPos, LastBlock.transform.rotation);
+        }
+        delegators[nb_block](newBlock);
         return newBlock;
     }
 

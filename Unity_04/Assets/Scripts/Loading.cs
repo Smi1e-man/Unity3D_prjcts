@@ -27,10 +27,12 @@ public class Loading : MonoBehaviour
 
     public void ClickButtomLoad1()
     {
-        check = PlayerPrefs.GetInt(countLoadmain.ToString() + "a");
+        check = PlayerPrefs.GetInt(countLoadmain.ToString() + "b");
         key1 = PlayerPrefs.GetString(countLoadmain.ToString() + "a");
-        PlayerPrefs.SetInt(countLoadmain.ToString() + "a", ++check);
+
+        PlayerPrefs.SetInt(countLoadmain.ToString() + "b", ++check);
         PlayerPrefs.SetString(countLoadmain.ToString() + "a", key1);
+
         PlayerPrefs.Save();
 
         if (check > maxResult)
@@ -39,15 +41,16 @@ public class Loading : MonoBehaviour
             mainChoice = countLoadmain;
         }
 
-        countLoad2++;
         CountLoad();
     }
     public void ClickButtomLoad2()
     {
-        check = PlayerPrefs.GetInt(countLoad2.ToString() + "a");
+        check = PlayerPrefs.GetInt(countLoad2.ToString() + "b");
         key2 = PlayerPrefs.GetString(countLoad2.ToString() + "a");
-        PlayerPrefs.SetInt(countLoad2.ToString() + "a", ++check);
+
+        PlayerPrefs.SetInt(countLoad2.ToString() + "b", ++check);
         PlayerPrefs.SetString(countLoad2.ToString() + "a", key2);
+
         PlayerPrefs.Save();
 
         if (check > maxResult)
@@ -56,46 +59,36 @@ public class Loading : MonoBehaviour
             mainChoice = countLoad2;
         }
 
-        countLoad2++;
         CountLoad();
     }
 
     void CountLoad()
     {
+        countLoad2++;
+        if (countLoad2 > endCount)
+        {
+            countLoadmain++;
+            countLoad2 = countLoadmain + 1;
+        }
         if (countLoadmain < endCount)
         {
-            key1 = countLoadmain.ToString();
-            key2 = countLoad2.ToString();
-            Load(key1, key2);
-            if (countLoad2 == endCount)
-            {
-                countLoadmain++;
-                countLoad2 = countLoadmain;
-            }
+			key1 = countLoadmain.ToString();
+			key2 = countLoad2.ToString();
+			Load(key1, key2);         
         }
         else
         {
             GameManager.G_main_choice = mainChoice;
             Application.LoadLevel(2);
-
-            //PlayerPrefs.DeleteAll();
-            //PlayerPrefs.Save();
         }
     }
 
     void Load(string key1, string key2)
     {
-        //string key = GameManager.G_count_text.ToString();
-        //string key1 = "1";
-        //string key2 = "2";
         if (PlayerPrefs.HasKey(key1 + "a") && PlayerPrefs.HasKey(key2 + "a"))
         {
             Text1.text = PlayerPrefs.GetString(key1 + "a");
             Text2.text = PlayerPrefs.GetString(key2 + "a");
-            //Debug.Log("TEXT_2" + Text2.text);
         }
-        //PlayerPrefs.DeleteAll();
-        //PlayerPrefs.Save();
-        //Debug.Log(key);
     }
 }

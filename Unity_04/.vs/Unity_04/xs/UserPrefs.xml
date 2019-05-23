@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{41AD0B53-6EF1-D602-0973-35E4FB7B7A83}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Quit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Saving.cs">
     <Files>
-      <File FileName="Assets/Scripts/EnterText.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/EnterText.cs" Line="22" Column="1" />
       <File FileName="Assets/Scripts/Plus.cs" Line="8" Column="29" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="8" Column="37" />
       <File FileName="Assets/Scripts/LevelOnLoad.cs" Line="7" Column="22" />

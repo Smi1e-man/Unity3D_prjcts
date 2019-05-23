@@ -26,7 +26,8 @@ public class Mr_Grey_Block : MonoBehaviour, IBlocks
     }
     public void Crush()
     {
-        GameManager.G_score++;
+        GameManager.G_score += 1;
         Destroy(gameObject);
+		Debug.Log(GameManager.G_score);
     }
 }

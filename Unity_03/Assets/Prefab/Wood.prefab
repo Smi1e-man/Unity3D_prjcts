@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 887027942936935290}
   - component: {fileID: 887027942936935289}
   - component: {fileID: 887027942936935288}
-  - component: {fileID: 887027942936935293}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Block
@@ -92,7 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e817d8eb7ead14ebc80cdbcba408381c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
 --- !u!65 &887027942936935288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106,15 +104,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &887027942936935293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887027942936935271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d174ec3b696fb49fba091475fd1a0155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
