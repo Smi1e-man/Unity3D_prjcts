@@ -260,12 +260,6 @@
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>/Users/seshevch/Unity3D_prjcts/Unity_03/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
@@ -635,16 +629,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Animation\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\Block_Bad.cs" />
+    <Compile Include="Assets\Scripts\Block_Bomb.cs" />
+    <Compile Include="Assets\Scripts\Block_Good.cs" />
     <Compile Include="Assets\Scripts\ClickMous.cs" />
+    <Compile Include="Assets\Scripts\Crush_effect.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Generator_blocks.cs" />
     <Compile Include="Assets\Scripts\IBlocks.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
-    <Compile Include="Assets\Scripts\Mr_Bomb_Block.cs" />
-    <Compile Include="Assets\Scripts\Mr_Grey_Block.cs" />
-    <Compile Include="Assets\Scripts\Mr_Purple_Block.cs" />
+    <Compile Include="Assets\Scripts\Score_result.cs" />
     <Compile Include="Assets\Scripts\Swiper.cs" />
     <Compile Include="Assets\Scripts\UI\LoadOnLevel.cs" />
+    <Compile Include="Assets\Scripts\UI\Retry_Panel.cs" />
+    <Compile Include="Assets\Scripts\UI\ViewResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />

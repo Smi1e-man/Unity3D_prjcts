@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class Swiper : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Vector3 point1;
+    Vector3 point2;
+    Vector3 distance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void OnMouseDown()
+	{
+        point1 = Input.mousePosition;
+        //Debug.Log(point1);
+	}
+
+	private void OnMouseUp()
+	{
+        point2 = Input.mousePosition;
+        //Debug.Log(point2);
+	}
+
+	private void Update()
+	{
+        if (point1.x != point2.x)
+        {
+            Debug.Log("Swipe");
+            gameObject.GetComponent<IBlocks>().Swipe();
+        }
+        //Debug.Log(Input.mousePosition);
+	}
 }

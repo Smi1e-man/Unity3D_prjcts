@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ClickMous : MonoBehaviour
 {
-
     void OnMouseDown()
     {
         gameObject.GetComponent<IBlocks>().Click();
+
     }
 }

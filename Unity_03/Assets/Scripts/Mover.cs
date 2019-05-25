@@ -4,38 +4,36 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    public GameObject prefab;
-    GameObject[] blocks;
-    float speed;
+    public GameObject[] blocks;
 
+    float speed;
     float speedDelta;
 
     RaycastHit hit;
 
+    // Update is called once per frame
     void Update()
     {
-        
-		blocks = GameObject.FindGameObjectsWithTag("Block");
-
-        foreach (GameObject block in blocks)
+        if (GameManager.G_move_game == 1)
         {
-            if (block.transform.position.z < 0)
-            {
-                //block.gameObject.GetComponent<IBlocks>().Crush();
-                block.SendMessage("Crush");
-                Debug.Log("Tuts");
-            }
-            else if (Physics.Raycast(block.transform.position, Vector3.back, out hit) && hit.distance > block.transform.localScale.z + 3f)
-                speed = 3.5f;
-            else
-                speed = 2f;
-            MoveBlock(block);
+			blocks = GameObject.FindGameObjectsWithTag("Block");
+			
+			foreach (GameObject block in blocks)
+			{
+				if (block.transform.position.y < 0)
+					block.SendMessage("Crush");
+				else if (Physics.Raycast(block.transform.position, Vector3.down, out hit) && hit.distance > block.transform.localScale.y + 3f)
+					speed = 3.5f;
+				else
+					speed = 2f;
+				MoveBlock(block);
+			}
+            speedDelta = GameManager.G_score * 0.3f;   
         }
-        speedDelta = GameManager.G_score * 0.3f;
     }
 
     void MoveBlock(GameObject block)
     {
-        block.transform.position += Vector3.back * Time.deltaTime * (speed + speedDelta);
+        block.transform.position += Vector3.down * Time.deltaTime * (speed + speedDelta);
     }
 }

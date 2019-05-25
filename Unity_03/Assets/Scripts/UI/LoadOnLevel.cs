@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class LoadOnLevel : MonoBehaviour
 {
-    public void loadlevel(int level)
+
+	IEnumerator Load()
+	{
+		yield return new WaitForSeconds(0.7f);
+        loadlevel(1);
+	}
+    void loadlevel(int level)
     {
         Application.LoadLevel(level);
     }
