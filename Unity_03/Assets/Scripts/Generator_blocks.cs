@@ -48,7 +48,7 @@ public class Generator_blocks : MonoBehaviour
         int nb_block = Random_block();
         if (nb_block == 2)
         {
-            newPos.y += 5f;
+            newPos.y += 3f;
             newBlock = Instantiate(bomb, newPos, LastBlock.transform.rotation);
         }
         else

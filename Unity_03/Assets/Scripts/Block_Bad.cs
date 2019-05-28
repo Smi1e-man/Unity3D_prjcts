@@ -44,10 +44,12 @@ public class Block_Bad : MonoBehaviour, IBlocks
     public void Crush()
     {
         GameManager.G_score--;
+        if (GameManager.G_score < 0)
+            GameManager.G_score = 0;
         particleSystem.Clear();
         particleSystem.gameObject.transform.position = gameObject.transform.position;
         Destroy(gameObject);
         particleSystemRenderer.material = Bad_mtrl;
-        particleSystem.Emit(5);
+        particleSystem.Emit(7);
     }
 }
