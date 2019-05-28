@@ -8,7 +8,7 @@
       <File FileName="Assets/Scripts/Generator_blocks.cs" Line="51" Column="28" />
       <File FileName="Assets/Scripts/UI/ViewResult.cs" Line="23" Column="1" />
       <File FileName="Assets/Scripts/Block_Bad.cs" Line="53" Column="32" />
-      <File FileName="Assets/Scripts/Mover.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Mover.cs" Line="28" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
