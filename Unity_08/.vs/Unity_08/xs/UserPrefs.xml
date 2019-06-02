@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{76FD23D1-122E-9E6A-B9CF-169FE31ED7B7}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoveEnemy.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ClickMouse.cs" Line="34" Column="110" />
+      <File FileName="Assets/Scripts/Generator.cs" Line="50" Column="48" />
+      <File FileName="Assets/Scripts/MoveEnemy.cs" Line="16" Column="106" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
