@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3343768699180400695}
   - component: {fileID: 4784670423106153512}
   - component: {fileID: 6729150733765016339}
-  - component: {fileID: 32607724474861302}
   - component: {fileID: 2904345445463420084}
   m_Layer: 0
   m_Name: Bomb
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577456549861506837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.036, y: -0.044316053, z: 0.185}
+  m_LocalPosition: {x: -0.036, y: -4.6729255, z: 0.185}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8595993348481105768}
@@ -94,18 +93,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9875139, y: 1.0836945, z: 1.4807848}
   m_Center: {x: 0.010505497, y: -0.044568658, z: -0.08115977}
---- !u!114 &32607724474861302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577456549861506837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0452900590816485fbcf0aae8e20eda7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2904345445463420084
 MonoBehaviour:
   m_ObjectHideFlags: 0

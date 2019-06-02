@@ -267,6 +267,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7373424111862954052}
   - component: {fileID: 7373424111862954055}
+  - component: {fileID: 6315868734014124066}
+  - component: {fileID: 5469883323194488530}
   m_Layer: 0
   m_Name: Centre
   m_TagString: Untagged
@@ -283,7 +285,7 @@ Transform:
   m_GameObject: {fileID: 7373424111862954054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.1409826, y: 3.1409826, z: 0}
+  m_LocalScale: {x: 3.14, y: 3.14, z: 0}
   m_Children:
   - {fileID: 7373424111006404160}
   m_Father: {fileID: 0}
@@ -337,3 +339,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6315868734014124066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7373424111862954054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41a884ee0f5a4b468101dc974cbfdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deltaScale: 0.1
+  bigScale: 1.24
+--- !u!58 &5469883323194488530
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7373424111862954054}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 9b6ca6f02e3b54207a92ae6978ca0b76, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.09

@@ -71,7 +71,6 @@
     <Compile Include="Assets\Scripts\IBlocks.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\Score_result.cs" />
-    <Compile Include="Assets\Scripts\Swiper.cs" />
     <Compile Include="Assets\Scripts\UI\LoadOnLevel.cs" />
     <Compile Include="Assets\Scripts\UI\Retry_Panel.cs" />
     <Compile Include="Assets\Scripts\UI\ViewResult.cs" />

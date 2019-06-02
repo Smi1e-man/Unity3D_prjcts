@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
 
     public static int G_score = 0;
+    public static int G_result = 10;
+
 
     // Start is called before the first frame update
     void Start()

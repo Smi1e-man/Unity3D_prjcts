@@ -17,13 +17,13 @@ public class Block_Bomb : MonoBehaviour, IBlocks
     }
     public void Click()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
     public void Swipe()
     {
         //Vector3 vector = new Vector3(0, 0, 10);
-        //GetComponent<Rigidbody>().AddForce(vector * 3, ForceMode.Impulse);
-        Destroy(gameObject);
+        //GetComponent<Rigidbody>().AddForce(Vector3.right * 3, ForceMode.Impulse);
+        Destroy(gameObject, 1F);
 
     }
     public void Crush()

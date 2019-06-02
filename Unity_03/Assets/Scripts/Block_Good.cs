@@ -38,7 +38,7 @@ public class Block_Good : MonoBehaviour, IBlocks
     }
     public void Swipe()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
     }
     public void Crush()

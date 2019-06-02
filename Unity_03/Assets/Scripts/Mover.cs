@@ -23,9 +23,9 @@ public class Mover : MonoBehaviour
 				if (block.transform.position.y < 0)
 					block.SendMessage("Crush");
 				else if (Physics.Raycast(block.transform.position, Vector3.down, out hit) && hit.distance > block.transform.localScale.y + 3f)
-					speed = 4.5f;
+					speed = 6f;
 				else
-					speed = 2.5f;
+					speed = 5f;
 				MoveBlock(block);
 			}
             speedDelta = GameManager.G_score * 0.3f;   

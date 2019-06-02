@@ -5,7 +5,7 @@ using UnityEngine;
 public class HexGenerator : MonoBehaviour
 {
     public GameObject hexPrefab;
-
+    public Transform hexTransform;
     public float spawnDelta = 1f;
 
     float nextSpawnTime = 0f;
@@ -21,7 +21,8 @@ public class HexGenerator : MonoBehaviour
     {
         if (Time.time >= nextSpawnTime)
         {
-            Instantiate(hexPrefab, Vector3.zero, Quaternion.identity);
+            //Instantiate(hexPrefab, Vector3.zero, Quaternion.identity);
+            Instantiate(hexPrefab, Vector3.zero , Quaternion.identity, hexTransform);
             nextSpawnTime = Time.time + 1 * spawnDelta;
         }
     }
