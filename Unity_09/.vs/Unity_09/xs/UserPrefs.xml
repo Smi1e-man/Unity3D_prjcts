@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{78B4FE31-E561-568D-465E-E7331DE7E3BE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreHeight.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MoveRotate.cs" Line="49" Column="82" />
+      <File FileName="Assets/Scripts/MoveCamera.cs" Line="13" Column="20" />
+      <File FileName="Assets/Scripts/Click.cs" Line="27" Column="45" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="11" Column="42" />
+      <File FileName="Assets/Scripts/Spawner.cs" Line="30" Column="43" />
+      <File FileName="Assets/Scripts/Loot.cs" Line="32" Column="17" />
+      <File FileName="Assets/Scripts/TouchLoot.cs" Line="21" Column="57" />
+      <File FileName="Assets/Scripts/ILoot.cs" Line="7" Column="19" />
+      <File FileName="Assets/Scripts/Loot_Nitro.cs" Line="13" Column="38" />
+      <File FileName="Assets/Scripts/Loot_Gold.cs" Line="5" Column="46" />
+      <File FileName="Assets/Scripts/ScoreHeight.cs" Line="9" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
