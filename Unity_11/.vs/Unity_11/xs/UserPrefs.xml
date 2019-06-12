@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{25937E0E-AF8C-4B0D-A636-5247F5EC7EE1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Mover.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Mover.cs" Line="8" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Unity_11" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Mover.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="214f1891-79f4-4f57-baf6-24199dae9f39" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
