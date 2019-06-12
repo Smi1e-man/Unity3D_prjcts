@@ -5,6 +5,8 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
 
+    [SerializeField] float speed = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +16,19 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow){
-            transform.position -= Vector3.down * speed * Time.deltaTime; 
-            }
+        //if (Input.GetKey(KeyCode.UpArrow))
+        //{
+            transform.position -= Vector3.up * speed * Time.deltaTime;
+        //}
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position -= Vector3.left * speed * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position -= Vector3.right * speed * Time.deltaTime;
+        }
     }
 }
