@@ -61,8 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MoverBlock.cs" />
+    <Compile Include="Assets\Scripts\MoverBlockTwo.cs" />
     <Compile Include="Assets\Scripts\MoverCamera.cs" />
     <Compile Include="Assets\Scripts\MoverCar.cs" />
+    <Compile Include="Assets\Scripts\SpawnBlocks.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/seshevch/Unity3D_prjcts/Unity_10/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
